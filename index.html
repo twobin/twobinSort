@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>twobin 常见排序算法 （JS版） </title>  
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+<meta name="keywords" content="排序,算法,JavaScript排序" />  
+<meta name="description" content="常见排序算法:冒泡排序,选择排序,插入排序,希尔排序,快速排序(递归),快速排序(堆栈),归并排序,堆排序" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+<script type="text/javascript" src="main.js"></script>
+</head>  
+<body>  
+<div id="doc" class="y-t3">
+	<div id="hd">
+		<h1 class="h1">twobin 常见排序算法（JS版）</h1>
+	</div>
+	<div id="bd">
+		<div class="y-main">
+			<div class="y-g main">
+				<div>
+					<h2>随机生成乱序数组</h2>
+					<textarea id="txtInput" style="width:100%;height:100px;" readonly></textarea>
+					<h2>排序数组</h2>
+					<textarea id="txtOutput" style="width:100%;height:100px;" readonly></textarea>
+					<br /><br />
+					<div>			
+						<button id="btnSort">JS内置排序</button>  
+						<button id="btnBubble">冒泡排序</button>  
+						<button id="btnSelection" >选择排序</button> 
+						<button id="btnInsertion" >插入排序</button> 
+						<button id="btnShell" >希尔排序</button> 
+						<button id="btnQuick" >递归快速排序</button>  
+						<button id="btnStackQuick" >堆栈快速排序</button>  
+						<button id="btnMerge" >归并排序</button> 
+						<button id="btnHeap" >堆排序</button>
+						<button id="btnGenerate">生成随机数</button>
+						随机数个数：<input id="txtCount" value="10000" style="width:50px" /> 
+						最大随机数：<input id="txtMax" value="10000" style="width:50px" />  			
+					</div>
+				</div>
+				<div>
+					<h2>排序算法性能</h2>
+					<table cellpadding="0" cellspacing="0" class="table bd_1">                       
+						<colgroup>
+							<col >
+							<col >
+							<col >
+						</colgroup>
+						<thead class="b f14">
+							<tr>
+								<th class="tc">排序算法</th>
+								<th class="tc">数组长度（个）</th>								
+								<th class="tc">平均耗时（毫秒）</th>																	
+							</tr>
+						</thead>
+						<tbody id="memberListIn">   
+							<tr id="970000000000001">
+								<td  class="tc">JS内置排序</td>
+								<td><span id="length_1"></span></td>
+								<td><span id="time_1"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">冒泡排序</td>
+								<td><span id="length_2"></span></td>
+								<td><span id="time_2"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">选择排序</td>
+								<td><span id="length_3"></span></td>
+								<td><span id="time_3"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">插入排序</td>
+								<td><span id="length_4"></span></td>
+								<td><span id="time_4"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">希尔排序</td>
+								<td><span id="length_5"></span></td>
+								<td><span id="time_5"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">递归快速排序</td>
+								<td><span id="length_6"></span></td>
+								<td><span id="time_6"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">堆栈快速排序</td>
+								<td><span id="length_7"></span></td>
+								<td><span id="time_7"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">归并排序</td>
+								<td><span id="length_8"></span></td>
+								<td><span id="time_8"></span></td>
+							</tr>
+							<tr id="970000000000001">
+								<td  class="tc">堆排序</td>
+								<td><span id="length_9"></span></td>
+								<td><span id="time_9"></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>  
+</html> 
