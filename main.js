@@ -1,3 +1,4 @@
+//add test remark
 window.onload=function(){
 	//生成随机数
 	generate();
